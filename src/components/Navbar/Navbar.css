@@ -38,10 +38,17 @@
   background-color: #fff4f2;
 }
 
-.navbar .active {
+.navbar .activee {
   padding-bottom: 2px;
   border-bottom: 2px solid #49557e;
 }
+
+/* Apply the animation when the link is clicked (active class) */
+.activee::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
 
 .navbar li {
   cursor: pointer;
