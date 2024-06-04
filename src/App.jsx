@@ -9,14 +9,14 @@ import LoginPopup from './components/LoginPopup/LoginPopup'
 import { useState } from 'react'
 
 function App() {
-  const [showLogin, setshowLogin] = useState(false)
+  const [showLogin, setShowLogin] = useState(false)
   return (
     <>
       {
-        showLogin ? <LoginPopup /> : <></>
+        showLogin ? <LoginPopup setShowLogin={setShowLogin} /> : <></>
       }
       <div className='app'>
-        <Navbar setshowLogin={setshowLogin} />
+        <Navbar setShowLogin={setShowLogin} />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/cart' element={<Cart />} />
