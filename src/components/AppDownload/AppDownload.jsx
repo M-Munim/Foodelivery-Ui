@@ -7,7 +7,7 @@ const AppDownload = () => {
     <div className='app-download' id='app-download'>
       <p>For Better Experience Download <br /> Our App</p>
 
-      <div className="app-doenload-platforms">
+      <div className="app-download-platforms">
         <img src={assets.play_store} alt="" />
         <img src={assets.app_store} alt="" />
       </div>
@@ -16,4 +16,3 @@ const AppDownload = () => {
 }
 
 export default AppDownload
-
